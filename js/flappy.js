@@ -40,3 +40,6 @@ function ParDeBarreiras(altura, abertura, x){
     this.sortearAbertura()
     this.setX(x)
 }
+
+const b = new ParDeBarreiras(600, 250, 400)
+document.querySelector('[wm-flappy]').appendChild(b.elemento)
