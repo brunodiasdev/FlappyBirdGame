@@ -5,3 +5,11 @@
     font-family: 'pixel';
     src: src('../fonts/Pixel.tff')
 }
+[wm-flappy]{
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-color:deepskyblue;
+}
