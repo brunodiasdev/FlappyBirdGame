@@ -28,3 +28,12 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.barreira{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barreira .borda{
+    height: 30px;
+    
+}
