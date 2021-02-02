@@ -53,6 +53,7 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto){
     ]
 
     const deslocamento = 3
+    this.animar = () => {
     this.pares.forEach(par => {
         par.setX(par.getX() - deslocamento)
 
@@ -66,7 +67,11 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto){
         if(cruzouOMeio) notificarPonto()
     })
 }
+}
 
-const barreiras = new Barreiras(600, 300, 220, 400)
+const barreiras = new Barreiras(600, 1100, 220, 400)
 const areaDoJogo = document.querySelector('[wm-flappy]')
 barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
+setInterval(() => {
+    barreiras.animar()
+}, 20)
