@@ -67,6 +67,6 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto){
     })
 }
 
-const barreiras = new Barreiras(700, 1200, 200, 400)
+const barreiras = new Barreiras(600, 300, 220, 400)
 const areaDoJogo = document.querySelector('[wm-flappy]')
 barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
