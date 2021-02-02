@@ -2,8 +2,8 @@
     box-sizing:border-box;
 }
 @font-face{
-    font-family: 'pixel';
-    src: src('../fonts/Pixel.tff')
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
 }
 [wm-flappy] {
     position: relative;
