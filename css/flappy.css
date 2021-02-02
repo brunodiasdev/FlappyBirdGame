@@ -37,4 +37,5 @@
     height: 30px;
     width: 130px;
     background: linear-gradient (90deg, #639301, #A5E82E);
+    border: 2px solid #000;
 }
