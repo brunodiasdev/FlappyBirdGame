@@ -20,3 +20,9 @@
     left: calc(50% - 30px);
     bottom: 50%;
 }
+.par-de-barreiras{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+}
