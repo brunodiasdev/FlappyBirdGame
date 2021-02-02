@@ -31,9 +31,9 @@ function ParDeBarreiras(altura, abertura, x){
         const alturaInferior = altura - abertura - alturaSuperior
         this.superior.setAltura(alturaSuperior)
         this.inferior.setAltura(alturaInferior)
-
-        this.getX = () => parseInt(this.elemento.style.left.split('px')[0])
     }
 
-    this.getX = () =>
+    this.getX = () => parseInt(this.elemento.style.left.split('px')[0])
+    this.setX = x => this.elemento.style.left = `${x}px`
+    this.getLargura = () =>this.elemento.clientWidth
 }
