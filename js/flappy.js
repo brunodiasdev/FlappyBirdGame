@@ -75,7 +75,7 @@ function Passaro(alturaJogo){
     this.elemento.src = 'imgs/passaro.png'
     
     this.getY = () => parseInt(this.elemento.style.bottom.split('px')[0])
-    this.setY = () => this.elemento.style.bottom = `${y} px`
+    this.setY = y => this.elemento.style.bottom = `${y}px`
 
     window.onkeydown = e => voando = true
     window.onkeyup = e => voando = false
@@ -95,9 +95,13 @@ function Passaro(alturaJogo){
     }
 }
 
-const barreiras = new Barreiras(600, 1100, 200, 400)
+const barreiras = new Barreiras(600, 1100, 300, 400)
+const passaro = new Passaro(600)
 const areaDoJogo = document.querySelector('[wm-flappy]')
+
+areaDoJogo.appendChild(passaro.elemento)
 barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
 setInterval(() => {
     barreiras.animar()
+    passaro.animar()
 }, 20)
