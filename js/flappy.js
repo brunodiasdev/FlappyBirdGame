@@ -71,7 +71,8 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto){
 function Passaro(alturaJogo){
     let voando = false
 
-    this
+    this.elemento = novoElemento('img', 'passaro')
+    
 }
 
 const barreiras = new Barreiras(600, 1100, 200, 400)
