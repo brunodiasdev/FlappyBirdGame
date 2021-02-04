@@ -68,6 +68,11 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto){
     })
 }
 }
+function Passaro(alturaJogo){
+    let voando = false
+
+    this
+}
 
 const barreiras = new Barreiras(600, 1100, 200, 400)
 const areaDoJogo = document.querySelector('[wm-flappy]')
