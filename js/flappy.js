@@ -73,7 +73,7 @@ function Passaro(alturaJogo){
 
     this.elemento = novoElemento('img', 'passaro')
     this.elemento.src = 'imgs/passaro.png'
-    
+    this.getY = () => parseInt(this.elemento.style.bottom.split('px')[0])
 }
 
 const barreiras = new Barreiras(600, 1100, 200, 400)
