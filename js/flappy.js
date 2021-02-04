@@ -72,6 +72,7 @@ function Passaro(alturaJogo){
     let voando = false
 
     this.elemento = novoElemento('img', 'passaro')
+    this.elemento.src = 'imgs/passaro.png'
     
 }
 
