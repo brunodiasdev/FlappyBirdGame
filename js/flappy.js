@@ -85,7 +85,13 @@ function Passaro(alturaJogo){
         const alturaMaxima = alturaJogo - this.elemento.clientHeight
         if (novoY <= 0) {
             this.setY(0)
+        } else if (novoY >= alturaMaxima){
+            this.setY(alturaMaxima)
+        }else{
+            this.setY(novoY)
         }
+    
+    this.setY(alturaJogo/2)
     }
 }
 
