@@ -114,6 +114,14 @@ setInterval(() => {
     barreiras.animar()
     passaro.animar()
 }, 20)*/
+ 
+function estaoSobrepostos(elementoA, elementoN){
+    const a = elementoA.getBoundingClientRect()
+    const b = elementoB.getBoundingClientRect()
+
+    const horizontal = a.left + a.width >= b.left && b.left + b.width >= a.left
+    const vertical = a.top + a.height >= b.top && b.top +b.height >= a.top
+}
 
 function FlappyBird(){
     let pontos = 0 
