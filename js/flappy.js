@@ -96,11 +96,19 @@ function Passaro(alturaJogo){
 }
 
 
+function Progresso() {
+    this.elemento = novoElemento('span', 'progresso')
+    this.atualizarPontos = pontos => {
+        this.elemento.innerHTML = pontos
+    }
+    this.atualizarPontos(0)
+}
+
 const barreiras = new Barreiras(700, 1100, 380, 400)
 const passaro = new Passaro(525)
 const areaDoJogo = document.querySelector('[wm-flappy]')
-
 areaDoJogo.appendChild(passaro.elemento)
+areaDoJogo.appendChild(new Progresso().elemento)
 barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
 setInterval(() => {
     barreiras.animar()
