@@ -117,7 +117,7 @@ setInterval(() => {
 
 function FlappyBird(){
     let pontos = 0 
-    const areaDoJogo = documento.querySelector('[wm-flappy]')
+    const areaDoJogo = document.querySelector('[wm-flappy]')
     const altura = areaDoJogo.clientHeight
     const largura = areaDoJogo.clientWidth
 
