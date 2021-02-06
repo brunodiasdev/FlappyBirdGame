@@ -115,7 +115,7 @@ setInterval(() => {
     passaro.animar()
 }, 20)*/
  
-function estaoSobrepostos(elementoA, elementoN){
+function estaoSobrepostos(elementoA, elementoB){
     const a = elementoA.getBoundingClientRect()
     const b = elementoB.getBoundingClientRect()
 
@@ -126,13 +126,15 @@ function estaoSobrepostos(elementoA, elementoN){
 }
 
 function colidiu (passaro, barreiras){
-    let colidiu = falsebarreiras.pares.forEach(parDeBarreiras => {
+    let colidiu = false
+        barreiras.pares.forEach(parDeBarreiras => {
         if (!colidiu){
             const superior = parDeBarreiras.superior.elemento
             const inferior = parDeBarreiras.inferior.elemento
             colidiu = estaoSobrepostos(passaro.elemento, superior) || estaoSobrepostos(passaro.elemento, inferior)
         }
     })
+    return colidiu
 }
 
 function FlappyBird(){
